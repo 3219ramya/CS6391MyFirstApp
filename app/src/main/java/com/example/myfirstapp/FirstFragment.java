@@ -1,6 +1,7 @@
 package com.example.myfirstapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,7 @@ public class FirstFragment extends Fragment {
         // Convert value to a number and increment it
         Integer count = Integer.parseInt(countString);
         count++;
+        Log.i("In countme","Method initated sucessfully");
         // Display the new value in the text view.
         showCountTextView.setText(count.toString());
     }
@@ -59,6 +61,7 @@ public class FirstFragment extends Fragment {
             public void onClick(View view) {
                 Toast myToast = Toast.makeText(getActivity(), "Hello toast!", Toast.LENGTH_SHORT);
                 myToast.show();
+                Log.i("Toast","Toasted button clicked");
             }
         });
 

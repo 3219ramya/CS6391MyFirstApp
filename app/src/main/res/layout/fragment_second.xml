@@ -26,9 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="218dp" />
 
     <TextView
         android:id="@+id/textview_random"
@@ -43,4 +43,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_header"
         app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="96dp"
+        android:layout_height="53dp"
+        android:src="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="176dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
